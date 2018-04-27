@@ -44,3 +44,5 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'devise', '~> 4.2'
 
 gem 'bcrypt', platforms: :ruby
+
+gem 'jquery-rails'
