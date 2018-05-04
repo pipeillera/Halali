@@ -46,3 +46,5 @@ gem 'devise', '~> 4.2'
 gem 'bcrypt', platforms: :ruby
 
 gem 'jquery-rails'
+
+gem 'toastr-rails', '~> 1.0'

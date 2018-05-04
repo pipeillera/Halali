@@ -7,22 +7,26 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Halali</a>
+      <div class="logo"><img src="http://jhonvalencia.com/logo-halali.png" class="logo-halali"> </div>
+      <!--<div class="logo">  <a class="navbar-brand" href="#">Halali</a></div>-->
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
+
         <% if (!user_signed_in?) %>
-          <li><%= link_to "Login", new_user_session_path %></li>
-          <li><%= link_to "Sign Up", new_user_registration_path %></li>
-          <li><a href="#contact">Contact</a></li>
+
+          <li class="navVert"><%= link_to "Login", new_user_session_path %></li>
+          <li class="navVert"><%= link_to "Sign Up", new_user_registration_path %></li>
+          <li class="navVert"><a href="#contact">Contact</a></li>
         <% else %>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false">
+              <%= image_tag avatar_url(current_user), class: "img-circle avatar_medium" %> &nbsp;
               <%= current_user.fullname %> <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li class="text-center">( <%= current_user.email %> )</li>
+              <li class="text-center">(<%= current_user.email %>)</li>
               <li role="separator" class="divider"></li>
               <li><a href="#">Manage Listings</a></li>
               <li><a href="#">List Your Space</a></li>
@@ -34,8 +38,6 @@
             </ul>
           </li>
         <% end %>
-
-
       </ul>
     </div><!--/.nav-collapse -->
   </div>
