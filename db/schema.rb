@@ -11,6 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180517041641) do
 
   create_table "photos", force: :cascade do |t|
@@ -55,6 +56,9 @@ ActiveRecord::Schema.define(version: 20180517041641) do
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_rooms_on_user_id"
   end
+=======
+ActiveRecord::Schema.define(version: 20180426214515) do
+>>>>>>> parent of 4918868... rooms
 =======
 ActiveRecord::Schema.define(version: 20180426214515) do
 >>>>>>> parent of 4918868... rooms
