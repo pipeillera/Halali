@@ -45,6 +45,7 @@ gem 'devise', '~> 4.2'
 
 
 
+
 gem 'jquery-rails'
 
 gem 'toastr-rails', '~> 1.0'
