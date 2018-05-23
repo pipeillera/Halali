@@ -53,7 +53,7 @@ gem 'paperclip', '~>5.1.0'
 
 gem 'bcrypt', '~>3.1.12'
 
-gem 'aws-sdk', '~> 2.8'
+#gem 'aws-sdk', '~> 2.8'
 
 #gem 'omniauth', '~> 1.6'
 #gem 'omniauth-facebook' , '~> 4.0'

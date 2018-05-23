@@ -55,15 +55,15 @@ Rails.application.configure do
   #manual config to make devise gem works:
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
-   config.paperclip_defaults = {
-     storage: :s3,
-     path: ':class/:attachment/:id/:style/:filename',
-     s3_host_name: 's3-us-east-2.amazonaws.com',
-     s3_credentials: {
-       bucket: 'YOUR_S3_BUCKET_NAME',
-       access_key_id: 'AKIAIZPFR3YB6HLVSCQA',
-       secret_access_key: 'aOq+4MpPmnMb4SbkWouVguQ64XJmBY5Rn9BK/Ki/',
-       s3_region: 'us-east-2'
-     }
-   }
+  # config.paperclip_defaults = {
+  #   storage: :s3,
+  #   path: ':class/:attachment/:id/:style/:filename',
+  #   s3_host_name: 's3-us-east-2.amazonaws.com',
+  #   s3_credentials: {
+  #     bucket: 'YOUR_S3_BUCKET_NAME',
+  #     access_key_id: 'AKIAIZPFR3YB6HLVSCQA',
+  #     secret_access_key: 'aOq+4MpPmnMb4SbkWouVguQ64XJmBY5Rn9BK/Ki/',
+  #     s3_region: 'us-east-2'
+  #   }
+   #}
 end
