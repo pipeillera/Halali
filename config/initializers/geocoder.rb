@@ -1,0 +1,3 @@
+Geocoder.confirgure(
+  units: :km
+)
