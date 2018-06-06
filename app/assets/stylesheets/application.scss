@@ -355,11 +355,17 @@ a {
 
 // THUMB photos
 .image-thumb{
-width: 100px;
-height: 80px;
+width: 110px;
+height: auto;
 }
 
 .image-medium{
 width: 240px;
 height: 180px;
+}
+
+// Carousel
+
+.fullwidth {
+  width: 100%;
 }
