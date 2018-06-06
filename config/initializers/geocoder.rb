@@ -1,3 +1,3 @@
-Geocoder.confirgure(
+Geocoder.configure(
   units: :km
 )

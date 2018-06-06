@@ -59,3 +59,5 @@ gem 'bcrypt', '~>3.1.12'
 #gem 'omniauth-facebook' , '~> 4.0'
 
 gem 'geocoder', '~> 1.4'
+
+gem 'jquery-ui-rails', '~>5.0'

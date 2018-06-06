@@ -167,7 +167,7 @@
               <%= image_tag room.cover_photo(:original), class: "image-medium" %>
             </div>
             <div class="panel-body">
-              <%= link_to room.listing_name, room, data-no-turbolink %> <br/>
+              <%= link_to room.listing_name, room %> <br/>
               (<%= room.distance.round(2) %> Km away)
             </div>
           </div>
@@ -176,9 +176,10 @@
     </div>
 
   </div>
-  <!-- Left Pannel -->
+  <!-- Right Pannel -->
   <div class="col-md-4">
     <!-- Reservation Form -->
+    <%= render 'reservations/form' %>
 
 
   </div>
