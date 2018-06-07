@@ -72,12 +72,13 @@ class RoomsController < ApplicationController
       conflict: is_conflict(start_date, end_date, @room)
     }
 
-    render json:output
+    render json: output
   end
 
   private
+
     def is_conflict(start_date, end_date, room)
-      chec = room.reservations.where("? < start_date AND end_date < ?", start_date, end_date)
+      check = room.reservations.where("? < start_date AND end_date < ?", start_date, end_date)
       check.size > 0? true : false
     end
 
